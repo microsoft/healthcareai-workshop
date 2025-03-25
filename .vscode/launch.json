@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Trainer",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/tutorial/03_Training/src/",
+            "program": "train.py",
+            "console": "integratedTerminal",
+            "python": "/anaconda/envs/uw-workshop-training/bin/python",
+            "args": [
+                "--data_dir", 
+                "/home/azureuser/data/rsna-pneumonia-detection-challenge/",
+                "--fast_dev_run", "3"
+            ]
+        }
+    ]
+}
