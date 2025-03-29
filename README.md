@@ -8,21 +8,36 @@ Before beginning this tutorial, please ensure you have the following:
 
 - An Azure subscription with sufficient permissions to create resources
 - Azure Machine Learning workspace provisioned
+- Visual Studio Code (VS Code) installed on your local machine
 - Basic familiarity with Python, PyTorch, and machine learning concepts
-- Required Python packages installed:
+- Required Python packages installed
 
-To set up the required environment, ensure you have the following dependencies installed.  Use the provided `requirements.txt` file located in the root directory of this repository:
+### Installing Visual Studio Code and Required Extensions
 
-```bash
-pip install -r requirements.txt
-```
+To set up Visual Studio Code (VS Code) for this workshop, follow these steps:
 
-Additionally, execute the following commands to complete the environment setup:
+1. **Download and Install VS Code**  
+   - Visit the [Visual Studio Code website](https://code.visualstudio.com/).
+   - Download the appropriate installer for your operating system (Windows, macOS, or Linux).
+   - Run the installer and follow the on-screen instructions to complete the installation.
 
-```bash
-conda install conda-build
-conda develop src
-```
+2. **Install Required Extensions**  
+   Once VS Code is installed, open it and install the following extensions to enhance your development experience:
+
+      - **Azure Machine Learning**  
+      - **Azure ML - Remote**  
+      - **Azure Resources**  
+      - **Jupyter**  
+      - **Pylance**  
+      - **Python**  
+      - **Python Debugger**  
+      - **Remote - SSH**  
+
+3. **Verify Extensions**  
+   - Open the Extensions view in VS Code by clicking on the Extensions icon in the Activity Bar on the side of the window or pressing `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (macOS).
+   - Search for each extension by name, ensure it is marked as **@installed**, and click **Install** if it is not already installed.
+
+Once VS Code and the required extensions are installed, you are ready to proceed with the workshop.
 
 ## Environment Setup
 
@@ -71,6 +86,54 @@ Once the compute instance is ready, you can use it for running the notebooks and
    - If prompted, follow the instructions to open VS Code on your local machine and connect to the remote compute instance.
 
 Once connected, you can access the files and run the notebooks directly from the compute instance using VS Code.
+
+## Setup Remote Environment
+
+To set up the required environment, follow these steps:
+
+1. **Clone the Repository**  
+   Begin by cloning this repository to your remote compute instance:
+
+   ```bash
+   git clone ...
+   ```
+
+2. **Set Up Conda Environment**  
+   Before installing dependencies, ensure you are using the correct Conda environment for this workshop. Follow these steps:
+
+   - Switch to the `azureml-py310-sdkv2` Conda environment:
+     ```bash
+     conda activate azureml-py310-sdkv2
+     ```
+
+   - If you might encounter issues activating the environment (e.g., due to a known bug), you may need to deactivate multiple times before switching:
+     ```bash
+     conda deactivate
+     conda deactivate
+     conda activate azureml-py310-sdkv2
+     ```
+   - Ensure you are not already in another Conda environment before activating `azureml-py310-sdkv2`.
+
+   This will be the environment you use for all workshop activities.
+
+3. **Install Dependencies**  
+   Use the provided `requirements.txt` file located in the root directory of this repository to install the necessary Python packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Complete Environment Setup**  
+   Execute the following commands to finalize the environment setup:
+
+   ```bash
+   conda install conda-build
+   conda develop src
+   ```
+
+Once these steps are completed, your environment will be ready for running the workshop notebooks and scripts.
+
+
 ## Workshop Structure
 
 This tutorial follows a systematic approach to ML model development:
