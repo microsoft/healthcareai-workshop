@@ -95,7 +95,7 @@ To set up the required environment, follow these steps:
    Begin by cloning this repository to your remote compute instance:
 
    ```bash
-   git clone ...
+   git clone https://github.com/microsoft/uwisconsin-collab-workshop
    ```
 
 2. **Set Up Conda Environment**  
