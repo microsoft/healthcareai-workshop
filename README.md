@@ -95,7 +95,10 @@ Once connected, you can access the files and run the notebooks directly from the
 
 To set up the required environment, follow these steps:
 
-1. **Clone the Repository**  
+1. **Open the Terminal in VS Code**
+Press `Ctrl+` (backtick) or go to View → Terminal from the menu bar to open the integrated terminal.
+
+2. **Clone the Repository**  
    Begin by cloning this repository to your remote compute instance:
 
    ```bash
@@ -104,7 +107,7 @@ To set up the required environment, follow these steps:
    cd uwisconsin-collab-workshop
    ```
 
-2. **Set Up Conda Environment**  
+3. **Set Up Conda Environment**  
    Before installing dependencies, ensure you are using the correct Conda environment for this workshop. Follow these steps:
 
    - Switch to the `azureml_py310_sdkv2` Conda environment:
@@ -122,14 +125,14 @@ To set up the required environment, follow these steps:
 
    This will be the environment you use for all workshop activities.
 
-3. **Install Dependencies**  
+4. **Install Dependencies**  
    Use the provided `requirements.txt` file located in the root directory of this repository to install the necessary Python packages:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Complete Environment Setup**  
+5. **Complete Environment Setup**  
    Execute the following commands to finalize the environment setup:
 
    ```bash
