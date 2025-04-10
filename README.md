@@ -103,8 +103,8 @@ Press `Ctrl+` (backtick) or go to View → Terminal from the menu bar to open th
 
    ```bash
    cd ~/cloudfiles/code/Users/<alias>/
-   git clone https://github.com/microsoft/uwisconsin-collab-workshop
-   cd uwisconsin-collab-workshop
+   git clone https://github.com/microsoft/healtcareai-workshop
+   cd healtcareai-workshop
    ```
 
 3. **Set Up Conda Environment**  
