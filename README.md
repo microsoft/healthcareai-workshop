@@ -102,8 +102,7 @@ Press `Ctrl+` (backtick) or go to View → Terminal from the menu bar to open th
    Begin by cloning this repository to your remote compute instance:
 
    ```bash
-   cd ~/cloudfiles/code/Users/<alias>/
-   git clone https://github.com/microsoft/healtcareai-workshop
+   cd ~/cloudfiles/code/Users/<alias>/ && git clone https://github.com/microsoft/healtcareai-workshop
    cd healtcareai-workshop
    ```
 
